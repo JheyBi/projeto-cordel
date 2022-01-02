@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
 :root {
     --cor00: #FFC873;
@@ -8,10 +9,60 @@
     --cor03: #806B4D;
     --cor04: #804D00;
 
-    --fontepadrao: 'Moon Dance', 'cursive';
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-poema: 'Moon Dance', 'cursive';
+    --fonte-header: 'Passion One', 'cursive';
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
-    font-family: var(--fontepadrao);
+    font-family: var(--fonte-padrao);
+    min-height: 100vh;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--fonte-header);
+    font-size: 70px;
+    padding-top: 30px;
+    font-weight: normal;
+}
+
+header > p {
+    padding-bottom: 20px;
+}
+
+section {
+    background-color: white;
+    
+}
+
+section#imagem1 {
+    background-image: url('../imagens/cacto.jpeg');
+}
+
+section#imagem2 {
+    background-image: url('../imagens/fazenda.jpeg');
+}
+
+article {
+    font-family: var(--fonte-poema);
+}
+
+footer {
+    background-color: black;
+    color: white;
+
 }
 
