@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
 :root {
@@ -10,7 +10,7 @@
     --cor04: #804D00;
 
     --fonte-padrao: Arial, Helvetica, sans-serif;
-    --fonte-poema: 'Indie Flower', 'cursive';
+    --fonte-poema: 'Amatic SC', 'cursive';
     --fonte-header: 'Passion One', 'cursive';
 
 }
@@ -18,6 +18,16 @@
 * {
     padding: 0px;
     margin: 0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 body {
@@ -46,20 +56,18 @@ header > p {
 section {
     background-color: white;
     padding: 100px 20px;
-    font-size: 25px;
 }
 
 section p{
-    padding: 10px;
-}
-
-section.imagem > article {
-    background-color: rgba(0, 0, 0, 0.329);
-    color: white;
+    padding: 20px 10px;
 }
 
 section.imagem {
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 5px 5px 14px #00000080;
+
 }
 
 section#imagem1 {
@@ -70,18 +78,28 @@ section#imagem1 {
 section#imagem2 {
     background-image: url('../imagens/fazenda.jpeg');
     background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+}
+
+section.imagem p {
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+    display: inline-block;
 }
 
 article {
     font-family: var(--fonte-poema);
     line-height: 2em;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.151);
+    font-size: 25px;
 }
 
 footer {
     background-color: black;
     color: white;
-
+    text-align: center;
+    padding: 8px;
 }
+
 
