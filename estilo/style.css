@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+:root {
+    --cor00: #FFC873;
+    --cor01: #FF9900;
+    --cor02: #CC7A00;
+    --cor03: #806B4D;
+    --cor04: #804D00;
+
+    --fontepadrao: 'Moon Dance', 'cursive';
+}
+
+body {
+    font-family: var(--fontepadrao);
+}
+
